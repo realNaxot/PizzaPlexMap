@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizza Plex Map</title>
+    <meta
+      name="description"
+      content="Map of Pizza Plex"
+    />
+    <meta
+      name="keywords"
+      content="pizza, plex, map, fnaf, horror"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="../styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">	
+  </head>
+
+  <body>
+    <img src="../img/background.webp" class="bg-image" />
+
+    <div id="container">
+      <div id="logo">
+        <h1>Pizza Plex Map</h1>
+      </div>
+
+      <div id="nav">
+          <a href="../" id="selected">Map</a>
+		  <br>
+          <a href="https://youtu.be/L1O1-HR7-Qs">Stage</a>
+		  <br>
+          <a href="../roxyraceway">Roxy Raceway</a>
+		  <br>
+          <a href="../fazerblast">Fazerblast</a>
+		  <br>
+          <a href="../montysgolf">Monty's Golf</a>
+		  <br>
+          <a href="../kidscove">Kid's Cove</a>
+		  <br>
+          <a href="../bonniebowl">Bonnie Bowl</a>
+		  <br>
+          <a href="../fazcade">Fazcade</a>
+		  <br>
+          <a href="../mazercise">MAZErcise</a>
+		  <br>
+          <a href="../elchips">El Chip's</a>
+        </ul>
+      </div>
+
+      <div id="content">
+		  <div id="first-map">
+			<h2>LEVEL 1</h2>
+			<img src="img/level1.png" usemap="#level1">
+			<map name="level1">
+				<area alt="Stage" title="Stage" href="https://youtu.be/L1O1-HR7-Qs" coords="481,136,166,29" shape="rect">
+				<area alt="Roxy Raceway" title="Roxy Raceway" href="/roxyraceway" coords="37,139,119,210" shape="rect">
+				<area alt="Fazer Blast" title="Fazer Blast" href="/fazerblast" coords="37,264,118,385" shape="rect">
+				<area alt="Monty's Golf" title="Monty's Golf" href="/montysgolf" coords="526,139,609,210" shape="rect">
+				<area alt="Kid's Cove" title="Kid's Cove" href="/kidscove" coords="526,265,608,384" shape="rect">
+			</map>
+			<button type="button" onclick="Next()">NEXT</button>
+		  </div>
+		  <div id="second-map">
+			<h2>LEVEL 2</h2>
+			<img src="img/level2.png" usemap="#level2">
+			<map name="level2">
+				<area alt="Bonnie Bowl" title="Bonnie Bowl" href="/bonniebowl" coords="37,139,119,210" shape="rect">
+				<area alt="Fazcade" title="Fazcade" href="/fazcade" coords="37,264,118,385" shape="rect">
+				<area alt="MAZErcise" title="MAZErcise" href="/mazercise" coords="526,139,609,210" shape="rect">
+				<area alt="El Chip's" title="El Chip's" href="/elchips" coords="526,265,608,384" shape="rect">
+			</map>
+			<button type="button" onclick="Prev()">PREV</button>
+		  </div>
+      </div>
+      <div id="footer">
+        PizzaPlex is not responsible for any problems that customers come in with.
+		<a href="https://fandom.com">Source</a>
+      </div>
+	  <script src="../script.js"></script>
+    </div>
+  </body>
+</html>
